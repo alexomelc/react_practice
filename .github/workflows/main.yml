@@ -1,6 +1,10 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+on: 
+  push:
+    brunches: [ master ]
+  pull_request:
+    branches: [ master ]  
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -18,6 +22,4 @@ jobs:
       - name: unit tests
         run: npm run test
       - name: build project
-        run: npm run build
-      - name: build project
-        run: npm run build                        
+        run: npm run build                  

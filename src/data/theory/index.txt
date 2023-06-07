@@ -1,0 +1,43 @@
+mobx
+
+pros
+no unnessasary rerenders
+less useless code, intuitive code, easy to write optimized code
+methods for async work out of the box
+
+cons 
+harder to debug, need to understant how it works under the hood, reactivity
+devtools not so good
+it's  not about architectural approach, no one way of writing data
+it's more about reactivity
+how many stors?
+how to communicate between them
+
+
+redux
+
+pros:
+easy to use
+strict architure
+easy to debug
+immutable state
+
+
+
+cons:
+rewrite code to avoid rerenders
+normalized data
+boilerplate code
+a lot of patterns for async code 
+
+
+SOLID
+
+
+
+Microtask and macrotask
+
+The tasks form a queue, so-called “macrotask queue” 
+
+promise is Microtask - hihgt priority
+console.log, mousemove is macrotask
